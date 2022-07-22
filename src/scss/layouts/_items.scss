@@ -1,0 +1,98 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  // min-height: calc(100vh - 15rem);
+  padding: 1rem;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 14rem;
+  height: 23rem;
+  border: 1px solid $color-border;
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-height: 15rem;
+    max-width: 12rem;
+    border-radius: 1rem;
+  }
+}
+.item::before {
+  content: attr(data-size) " ";
+  width: 3rem;
+  font-size: x-small;
+  color: $color-font-medium;
+  position: absolute;
+  left: 5.5rem;
+  top: 1.5rem;
+  text-align: center;
+  padding: 0.2rem 0.5rem;
+  background: $color-background-medium;
+  border: 0.1rem solid $color-border;
+  border-radius: 1rem;
+  opacity: 0.6;
+}
+.item-size_invisible{
+  position: absolute;
+  top: -9999rem;
+  left: -9999rem;
+}
+.item_in-basket{
+  background: $color-background-medium;
+  .item__buy::after{
+    content: " \2713";
+  }
+}
+.item__signature,
+.item__price,
+.item__buy,
+.item__buy_disabled,
+.item__amount {
+  font-size: smaller;
+  font-style: italic;
+  text-align: right;
+  margin: 0.2rem;
+}
+.item__price {
+  font-weight: bold;
+  &::after {
+    content: " pesso";
+  }
+}
+.item__buy {
+  margin: 0.2rem auto;
+  width: 90%;
+  border: 0.1rem solid $color-border;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  background: $color-background-medium;
+  text-align: center;
+  cursor: pointer;
+}
+.item__buy_disabled {
+  margin: 0.2rem auto;
+  width: 90%;
+  border: 0.1rem solid $color-border;
+  border-radius: 1rem;
+  padding: 0.2rem 0.5rem;
+  background: $color-background-medium;
+  text-align: center;
+  cursor: not-allowed;
+  filter: blur(0.04rem);
+}
+.item__amount {
+  color: $color-font-medium;
+  text-align: center;
+  &::before {
+    content: "in stock: ";
+  }
+}

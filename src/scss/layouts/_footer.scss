@@ -1,0 +1,18 @@
+footer {
+  display: flex;
+  height: 3rem;
+  background: $color-background-dark;
+  border-radius: 0 0 1rem 1rem;
+  color: $color-background-light;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.developer {
+  height: 1.5rem;
+  filter: invert(100%);
+}
+.company {
+  height: 1.5rem;
+  filter: invert(100%);
+}

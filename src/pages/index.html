@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../assets/icons/da-vinci.png" type="image/x-icon">
+  <title>Sketches</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Art Store</h1>
+    </div>
+    <div class="pages">
+      <a href="https://github.com/rolling-scopes-school/tasks/blob/master/tasks/online-store/README.md" target="_blank">About</a>
+    </div>
+    <div class="private">
+      <img src="../assets/icons/da-vinci.png" alt="log in">
+      <img src="../assets/icons/shopping-basket.png" alt="shopping cart" class="basket">
+      <div class="basket-items"></div>
+      <div class="basket-container">
+        <div class="basket-container__close">+</div>
+        <ol class="basket-container__list"></ol>
+        <div class="basket-container__list_clear">Clear shopping cart</div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="filter">
+      <div class="search">
+        <h3>Search</h3>
+        <input type="search" name="search" id="search" autofocus autocomplete="off" placeholder="Artist or picture name">
+      </div>
+      <div>
+        <h3>Artist</h3>
+        <ul>
+          <li class="artist">All</li>
+          <li class="artist">Michelangelo Buonarroti</li>
+          <li class="artist">Leonardo Da Vinci</li>
+          <li class="artist">Edgar Degas</li>
+          <li class="artist">Albrecht Durer</li>
+          <li class="artist">Gustav Klimt</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="country">Country</h3>
+        <select name="country" id="country">
+          <option value="">Not selected</option>
+          <option value="all">All</option>
+          <option value="italy">Italy</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="austria">Austria</option>
+        </select>
+      </div>
+      <div class="size">
+        <h3>Size</h3>
+        <ul>
+          <li class="size__value" id="sizeS">S</li>
+          <li class="size__value" id="sizeM">M</li>
+          <li class="size__value" id="sizeL">B</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Price</h3>
+        <div id="slider"></div>
+        <div>
+          <input type="number" name="min" id="priceMin">
+          <input type="number" name="max" id="priceMax">
+        </div>
+      </div>
+      <button id="reset">Clear filters</button>
+    </div>
+    <div class="items__wrapper">
+      <div class="sort">
+        Sort by price: 
+          <span class="price__up">&uarr;</span>
+          <span class="price__down">&darr;</span>
+      </div>
+      <div class="items"></div>
+    </div>
+  </main>
+  <footer>
+    <a href="https://github.com/emp74ark">
+      <img class="developer" src="../assets/icons/github.png" alt="epm74ark">
+    </a>
+    <a href="https://rs.school/">
+      <img class="company" src="../assets/icons/rsschool.png" alt="RS School">
+    </a>
+  </footer>
+</body>
+</html>

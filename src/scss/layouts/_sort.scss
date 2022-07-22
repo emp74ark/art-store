@@ -1,0 +1,21 @@
+.sort {
+  color: $color-font-medium;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+  text-align: right;
+  vertical-align: middle;
+  margin: 0.8rem 2rem;
+  span {
+    display: inline-block;
+    margin: 0.2rem;
+    border: 0.1rem solid $color-border;
+    border-radius: 50%;
+    width: 1.4rem;
+    height: 1.4rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+  }
+}

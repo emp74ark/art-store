@@ -1,0 +1,67 @@
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0.7rem 0.5rem auto;
+    font-size: 1rem;
+  }
+  header {
+    padding: 1rem;
+  }
+  .private {
+    img {
+      height: 1.4rem;
+      margin: 0.3rem;
+    }
+  }
+  h1 {
+    font-size: 1.4rem;
+  }
+  main {
+    flex-direction: column;
+  }
+  .filter {
+    width: auto;
+    justify-content: space-around;
+    border-radius: 0 0 1rem 1rem;
+    h3 {
+      font-size: 1.2rem;
+      margin: 0.5rem;
+      text-align: center;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .artist {
+    display: inline-block;
+  }
+  .sort {
+    text-align: center;
+    font-size: 1rem;
+    span {
+      width: 1rem;
+      height: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+  .basket-container {
+    width: 70vw;
+  }
+  .basket-container__item {
+    margin-left: -1.2rem;
+  }
+  .items {
+    justify-content: center;
+  }
+  .item {
+    justify-content: space-between;
+    height: 22rem;
+  }
+  .developer {
+    height: 1rem;
+  }
+  .company {
+    height: 1rem;
+  }
+}
